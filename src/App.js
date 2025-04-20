@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Task from "./components/Task";  
+import profileImg from "./profile.webp";
+
+
+
 
 const App = () => {
   const [value, setValue] = useState("");
@@ -30,10 +34,11 @@ const App = () => {
           alt="Profile Picture"
           className="profile-pic"
         /> */}
-        <img src="D:\React-Js\my-app\src\profile.webp"
+        <img src={profileImg} 
            alt="Profile Picture"
           className="profile-pic"
           />
+    
         <input
           type="text"
           value={value}
